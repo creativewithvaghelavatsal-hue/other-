@@ -1,0 +1,107 @@
+#Store and print name, age, and city
+
+print("hello python")
+
+print("my name is vatsal vaghela")
+
+print("my age is a 18")
+
+print("now i am stay in gujarat surar")
+
+#Take user input and display formatted output
+
+name = input("enter your name : ")
+
+age =int(input("enter your age : "))
+
+city = input("enter your city : ")
+
+#Process data slightly (optional)
+# 1. Assign initial values
+x = 5
+y = 10
+
+# 2. Swap the variables
+x, y = y, x
+
+# 3. Verify the result
+print("x:", x)  # Output: x: 10
+print("y:", y)  # Output: y: 5
+
+#find square and cube of a number
+# 1. Define the number
+num = 4
+
+# 2. Calculate square and cube
+square = num ** 2
+cube = num ** 3
+
+# 3. Print the results
+print("Square : ", square)  # Output: Square: 16
+print("Cube : ", cube)      # Output: Cube: 64
+ 
+square = pow(num, 2)
+cube = pow(num, 3)
+
+#Convert temperature (Celsius → Fahrenheit)
+
+# 1. Define the temperature in Celsius
+celsius = 25
+
+# 2. Apply the conversion formula
+fahrenheit = (celsius * 9/5) + 32
+
+# 3. Print the result
+print(f"{celsius}°C is equal to {fahrenheit}°F")
+# Output: 25°C is equal to 77.0°F
+
+celsius = float(input("Enter temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print("Temperature in Fahrenheit:", fahrenheit)
+
+#Simple calculator (+, -, *, /)
+
+num1 = float(input("Enter first number: "))
+op = input("Enter operator (+, -, *, /): ")
+num2 = float(input("Enter second number: "))
+
+if op == '+':
+    print("Result:", num1 + num2)
+elif op == '-':
+    print("Result:", num1 - num2)
+elif op == '*':
+    print("Result:", num1 * num2)
+elif op == '/':
+    if num2 != 0:
+        print("Result:", num1 / num2)
+    else:
+        print("Error: Cannot divide by zero!")
+else:
+    print("Invalid operator")
+
+#Find remainder using %
+
+dividend = int(input("Enter the dividend (number to divide): "))
+divisor = int(input("Enter the divisor (number to divide by): "))
+
+remainder = dividend % divisor
+print(f"The remainder of {dividend} divided by {divisor} is: {remainder}")
+
+#Calculate area of rectangle/circle
+
+length = float(input("Enter length : "))
+width = float(input("Enter width : "))
+rect_area = length * width
+print("Area of the rectangle : ", rect_area)
+
+#Calculate simple interest
+
+principal = float(input("Enter the principal amount (P) : "))
+rate = float(input("Enter the annual interest rate (R in %) : "))
+time = float(input("Enter the time period in years (T) : "))
+
+simple_interest = (principal * rate * time) / 100
+total_amount = principal + simple_interest
+
+print(f"Simple Interest: {simple_interest}")
+print(f"Total Amount (Principal + Interest) : {total_amount}")
